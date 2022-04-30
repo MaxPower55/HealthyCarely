@@ -149,6 +149,7 @@
     display: flex;
     flex-direction: column;
     gap: 150px;
+    align-items: center;
     padding: 100px 0 0 100px;
 }
 .footer {
@@ -472,9 +473,10 @@
     margin-top: 50px;
     display: grid;
     grid-template-areas: 'photo descr'
-                         'photo control';
-    grid-template-columns: 670px 1fr;
+                         'photo naming';
+    grid-template-columns: 670px 700px;
     grid-template-rows: 330px 100px;
+    position: relative;
 }
 .photo {
     grid-area: photo;
@@ -482,8 +484,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 80px 200px 0 100px;
+    min-width: 0;
 }
-.photo__wrapper {
+.photo-item {
+    min-width: 0;
+}
+.photo-item img {
+    object-fit: contain;
+}
+/* .photo__wrapper {
     max-width: 420px;
     max-height: 360px;
     position: relative;
@@ -502,34 +512,42 @@
     height: 100%;
     border: 2px solid var(--primary);
     z-index: -1;
-}
+} */
 .descr {
     grid-area: descr;
     background: var(--white-shade);
     padding: 100px 80px 0 70px;
     text-align: left;
 }
-.control {
-    grid-area: control;
+.naming {
+    grid-area: naming;
     text-align: left;
     padding: 45px 0 0 70px;
     position: relative;
+    width: 400px;
+}
+.slideshow__text {
+
+}
+.slideshow__prof {
+    margin-top: 14px;
 }
 .slideshow__arrowleft {
     position: absolute;
     bottom: 10px;
-    right: 60px;
+    right: 130px;
 }
 .slideshow__arrowright {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 80px;
 }
 
 @media screen and (max-width: 1280px) {
     .mainblock1__cards {
         gap: 20px;
         padding-top: 30px;
+        flex-wrap: wrap;
     }
     .card {padding: 30px 25px;}
     .card h4 {margin-top: 15px;}
@@ -540,12 +558,15 @@
         padding: 60px 0 0 50px;
     }
     .slides {
-        grid-template-columns: 550px 1fr;
+        grid-template-columns: 550px 600px;
+    }
+    .photo {
+        padding: 80px 30px 0 100px;
     }
     .descr {
         padding: 100px 50px 0 30px;
     }
-    .control {
+    .naming {
         padding: 45px 0 0 30px;
     }
 }
@@ -554,8 +575,8 @@
     .slides {
         grid-template-areas: 'photo'
                              'descr'
-                             'control';
-        grid-template-columns: 1fr;
+                             'naming';
+        grid-template-columns: 85vw;
         grid-template-rows: auto;
     }
     .photo {
@@ -615,7 +636,12 @@
     .mainblock4 {
         padding: 0;
     }
-    
+    .slideshow__arrowleft {
+        right: 80px;
+    }
+    .slideshow__arrowright {
+        right: 40px;
+    }
 }
 
 /* FOOTER-BLOCKDETAILING */
@@ -671,4 +697,60 @@
         width: 100%;
         justify-content: space-between;
     }
+}
+
+
+
+/* SLIDER-SLICK */
+
+/* Слайдер */
+.slick-slider {
+
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+/* Слайд */
+.slick-slide {
+
+}
+/* Активный слайд */
+.slick-slide .slick-active {
+
+}
+/* Основной слайд */
+.slick-slide .slick-current {
+
+}
+/* Слайд по центру */
+.slick-slide .slide-center {
+
+}
+/* Общий стиль слайдера */
+.slider {
+
+}
+/* Общий стиль стрелок */
+.slider .slick-arrow {
+
+}
+/* Стиль стрелки предыдущего слайда */
+.slider .slick-arrow .slick-prev {
+
+}
+/* Стиль стрелки следующего слайда */
+.slider .slick-arrow .slick-next {
+
+}
+
+.photo {
+    /* min-width: 0; */
+}
+.photo-item {
+    /* min-width: 0; */
 }

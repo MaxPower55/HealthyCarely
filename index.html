@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">    <title>HealhtyCarely</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>HealhtyCarely</title>
 </head>
 <body class="body">
     <header class="header">
@@ -133,19 +135,43 @@
             <p class="f-14-400 grey mainblock5__text">their impression after using this application</p>
             <div class="slides">
                 <div class="photo">
-                    <div class="photo__wrapper">
-                        <img src="media/img/photo_4.webp" loading="lazy" alt="doctor's photo">
-                    </div>
+                    <div class="photo-item"><img src="media/img/doctor-photo-1.webp" loading="lazy" alt="doctor's photo"></div>
+                    <div class="photo-item"><img src="media/img/doctor-photo-2.webp" loading="lazy" alt="doctor's photo"></div>
+                    <div class="photo-item"><img src="media/img/doctor-photo-3.webp" loading="lazy" alt="doctor's photo"></div>
+                    <div class="photo-item"><img src="media/img/doctor-photo-4.webp" loading="lazy" alt="doctor's photo"></div>
+                    <div class="photo-item"><img src="media/img/doctor-photo-5.webp" loading="lazy" alt="doctor's photo"></div>
                 </div>
                 <div class="descr">
                     <p class="f-25-400 black slideshow__text">“Healthycarely is an website and mobile app for you to feel better or get medical help. We offer you a 24/7 doctor service with no appointment needed”</p>
+                    <p class="f-25-400 black slideshow__text">“Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, natus. Sit labore officiis animi atque voluptates harum possimus asperiores modi iusto ut inventore.”</p>
+                    <p class="f-25-400 black slideshow__text">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam magnam iure neque corrupti!”</p>
+                    <p class="f-25-400 black slideshow__text">“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum illum expedita, eius dignissimos dicta aliquid commodi praesentium.”</p>
+                    <p class="f-25-400 black slideshow__text">“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium non molestias odio repudiandae dolores cumque nemo accusantium necessitatibus minima debitis.”</p>
                 </div>
-                <div class="control">
-                    <p class="f-20-700 black slideshow__name">Naufal Hidayat</p>
-                    <p class="f-14-700 grey slideshow__prof">Student at Telkom University</p>
-                    <img src="media/icons/arrow-to-left.svg" class="slideshow__arrowleft" alt="scroll right button">
-                    <img src="media/icons/arrow-to-right.svg" class="slideshow__arrowright" alt="scroll left button">
+                <div class="naming">
+                    <div>
+                        <p class="f-20-700 black slideshow__name">Naufal Hidayat</p>
+                        <p class="f-14-700 grey slideshow__prof">Student at Telkom University</p>
+                    </div>
+                    <div>
+                        <p class="f-20-700 black slideshow__name">Boris Johnson</p>
+                        <p class="f-14-700 grey slideshow__prof">GB politician</p>
+                    </div>
+                    <div>
+                        <p class="f-20-700 black slideshow__name">Polina Gagarina</p>
+                        <p class="f-14-700 grey slideshow__prof">Song orator</p>
+                    </div>
+                    <div>
+                        <p class="f-20-700 black slideshow__name">Michael Garden</p>
+                        <p class="f-14-700 grey slideshow__prof">Principal tabor</p>
+                    </div>
+                    <div>
+                        <p class="f-20-700 black slideshow__name">Abdurahma Ivanova</p>
+                        <p class="f-14-700 grey slideshow__prof">Google SEO</p>
+                    </div>
                 </div>
+                <img src="media/icons/arrow-to-left.svg" class="slideshow__arrowleft" alt="scroll right button" id="prevArrow">
+                <img src="media/icons/arrow-to-right.svg" class="slideshow__arrowright" alt="scroll left button" id="nextArrow">
             </div>
         </div>
     </main>
@@ -186,5 +212,9 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html> 
