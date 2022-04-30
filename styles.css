@@ -576,7 +576,7 @@
         grid-template-areas: 'photo'
                              'descr'
                              'naming';
-        grid-template-columns: 85vw;
+        grid-template-columns: 90vw;
         grid-template-rows: auto;
     }
     .photo {
