@@ -493,26 +493,6 @@
 .photo-item img {
     object-fit: contain;
 }
-/* .photo__wrapper {
-    max-width: 420px;
-    max-height: 360px;
-    position: relative;
-    z-index: 1;
-}
-.photo__wrapper img {
-    width: 100%;
-    object-fit: cover;
-}
-.photo__wrapper:before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--primary);
-    z-index: -1;
-} */
 .descr {
     grid-area: descr;
     background: var(--white-shade);
@@ -525,9 +505,6 @@
     padding: 45px 0 0 70px;
     position: relative;
     width: 400px;
-}
-.slideshow__text {
-
 }
 .slideshow__prof {
     margin-top: 14px;
@@ -614,6 +591,10 @@
     .mainblock2_right {
         width: 100%;
         padding: 10px 0 10px 0;
+        background: url('media/img/photo_2.webp') no-repeat top right;
+        background-size: contain;
+        }
+        
     }
     .avlistdoct {
         padding: 18px 30px;
@@ -699,58 +680,10 @@
     }
 }
 
-
-
 /* SLIDER-SLICK */
-
-/* Слайдер */
-.slick-slider {
-
-}
-/* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
 }
-/* Лента слайдов */
 .slick-track {
     display: flex;
-}
-/* Слайд */
-.slick-slide {
-
-}
-/* Активный слайд */
-.slick-slide .slick-active {
-
-}
-/* Основной слайд */
-.slick-slide .slick-current {
-
-}
-/* Слайд по центру */
-.slick-slide .slide-center {
-
-}
-/* Общий стиль слайдера */
-.slider {
-
-}
-/* Общий стиль стрелок */
-.slider .slick-arrow {
-
-}
-/* Стиль стрелки предыдущего слайда */
-.slider .slick-arrow .slick-prev {
-
-}
-/* Стиль стрелки следующего слайда */
-.slider .slick-arrow .slick-next {
-
-}
-
-.photo {
-    /* min-width: 0; */
-}
-.photo-item {
-    /* min-width: 0; */
 }
